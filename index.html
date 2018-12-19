@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="flex-container">
+   <div>
+       <div class="d-inline">
+           <span class="indicator caption to-do"></span>
+           <h4 class="text-white">To Do</h4>
+       </div>
+       <div class="d-inline ml-3">
+           <span class="indicator caption done"></span>
+           <h4 class="text-white">Done</h4>
+       </div>
+   </div>
+    <div class="panel">
+        <ul>
+            <li>
+                <span class="indicator to-do"></span>
+                <strong>Add a to do (at least a text as a to do)</strong>
+                <i class="far fa-check-circle check" title="Mark As Done"></i>
+                <i class="far fa-minus-square todoCheck d-none" title="Mark As ToDo"></i>
+                <i class="far fa-edit edit" title="edit"></i>
+                <i class="far fa-trash-alt delete" title="delete"></i>
+                <div class="w-100 f-center d-none">
+                    <input class="edit-text" type="text">
+                </div>
+                <hr>
+            </li>
+            <li>
+                <span class="indicator to-do"></span>
+                <strong>View list of To Do s</strong>
+                <i class="far fa-check-circle check" title="Mark As Done"></i>
+                <i class="far fa-minus-square todoCheck d-none" title="Mark As ToDo"></i>
+                <i class="far fa-edit edit" title="edit"></i>
+                <i class="far fa-trash-alt delete" title="delete"></i>
+                <div class="w-100 f-center d-none">
+                    <input class="edit-text" type="text">
+                </div>
+                <hr>
+            </li>
+            <li>
+                <span class="indicator to-do"></span>
+                <strong>Remove To Do s</strong>
+                <i class="far fa-check-circle check" title="Mark As Done"></i>
+                <i class="far fa-minus-square todoCheck d-none" title="Mark As ToDo"></i>
+                <i class="far fa-edit edit" title="edit"></i>
+                <i class="far fa-trash-alt delete" title="delete"></i>
+                <div class="w-100 f-center d-none">
+                    <input class="edit-text" type="text">
+                </div>
+                <hr>
+            </li>
+            <li>
+                <span class="indicator to-do"></span>
+                <strong>Can mark it as done or change text</strong>
+                <i class="far fa-check-circle check" title="Mark As Done"></i>
+                <i class="far fa-minus-square todoCheck d-none" title="Mark As ToDo"></i>
+                <i class="far fa-edit edit" title="edit"></i>
+                <i class="far fa-trash-alt delete" title="delete"></i>
+                 <div class="w-100 f-center d-none">
+                    <input class="edit-text" type="text">
+                </div>
+                <hr>
+            </li>
+            <li>
+                <span class="indicator done"></span>
+                <strong>And any extra features has bonus :)</strong>
+                <i class="far fa-check-circle check d-none" title="Mark As Done"></i>
+                <i class="far fa-minus-square todoCheck" title="Mark as ToDo"></i>
+                <i class="far fa-edit edit" title="edit"></i>
+                <i class="far fa-trash-alt delete" title="delete"></i>
+                 <div class="w-100 f-center d-none">
+                    <input class="edit-text" type="text">
+                </div>
+                <hr>
+            </li>
+        </ul>
+    </div>
+    <div class="text-center">
+        <i class="far fa-plus-square text-white plus-icon"></i>
+    </div>
+    <div class="add-panel text-center">
+        <label for="Add-text" class="f-left w-100">Add New Task</label>
+        <div class="w-100 text-center">
+            <input id="Add-text" type="text" class="add-input">
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+$colors: (
+    g1 : #00d2ff,
+    g2 : #3a7bd5,
+    light: #ffff,
+    warn: #ffd600,
+    success: #00c853,
+    danger: #ff4c4f
+);
+@function getColor($colorName){
+  @return map_get($colors,$colorName);
+}
+$icon-size : 18px;
+html,body{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  margin: 0;
+  background: linear-gradient(to right,getColor(g1),getColor(g2));
+  .panel{
+    margin-top: 40px;
+    background-color: getColor(light);
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+  }
+  .add-panel{
+    background-color: getColor(light);
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    margin-bottom: 18px;
+    padding: 15px 10px 20px 10px;
+    display: none;
+  }
+  .f-left{
+    float: left;
+  }
+  label{
+    margin-bottom: 7px;
+  }
+  .text-white{
+    color: getColor(light);
+  }
+}
+.m-0{
+  margin: 0 !important;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  align-items: center;
+  flex-direction: column;
+  .panel ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0 5px 15px 5px;
+    li{
+      margin: 20px 10px 20px 10px;
+      strong{
+        margin-left: 55px;
+      }
+      i {
+        float: right;
+        font-size: $icon-size;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    hr{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0,0,0,.1);
+    }
+  }
+}
+.indicator{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -11px;
+}
+.to-do{
+  background-color: getColor(warn);
+}
+.done{
+  background-color: getColor(success);
+}
+.caption{
+  margin-left: -50px;
+  margin-top: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+}
+.d-inline{
+  display: inline-block;
+}
+.ml-3{
+  margin-left: 75px;
+}
+.check{
+  color: getColor(success);
+}
+.edit{
+  color: getColor(g1);
+  margin-right: 8px;
+}
+.delete{
+  color: getColor(danger);
+  margin-right: 10px;
+}
+.todoCheck{
+  color: getColor(warn);
+}
+.w-100{
+  width: 100%;
+}
+.w-97{
+  width: 97%;
+}
+.w-50{
+  width: 50%;
+}
+.text-center{
+  text-align: center;
+}
+.f-center{
+  text-align: center;
+}
+.d-none{
+  display: none;
+}
+.edit-text{
+  margin-top: 18px;
+  padding: 5px;
+  width: 98%;
+}
+#Add-text{
+  margin-top: 5px;
+  padding: 10px 20px;
+  width: 84%;
+}
+.plus-icon{
+  font-size: 25px;
+  margin-top: 20px;
+  &:hover{
+    cursor: pointer;
+  }
+}

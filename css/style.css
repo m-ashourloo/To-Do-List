@@ -1,0 +1,192 @@
+html, body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+}
+body .panel {
+  margin-top: 40px;
+  background-color: #ffff;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+body .add-panel {
+  background-color: #ffff;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 18px;
+  padding: 15px 10px 20px 10px;
+  display: none;
+}
+body .f-left {
+  float: left;
+}
+body label {
+  margin-bottom: 7px;
+}
+body .text-white {
+  color: #ffff;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-container .panel ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 5px 15px 5px;
+}
+.flex-container .panel ul li {
+  margin: 20px 10px 20px 10px;
+}
+.flex-container .panel ul li strong {
+  margin-left: 55px;
+}
+.flex-container .panel ul li i {
+  float: right;
+  font-size: 18px;
+}
+.flex-container .panel ul li i:hover {
+  cursor: pointer;
+}
+.flex-container .panel ul hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -11px;
+}
+
+.to-do {
+  background-color: #ffd600;
+}
+
+.done {
+  background-color: #00c853;
+}
+
+.caption {
+  margin-left: -50px;
+  margin-top: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+.ml-3 {
+  margin-left: 75px;
+}
+
+.check {
+  color: #00c853;
+}
+
+.edit {
+  color: #00d2ff;
+  margin-right: 8px;
+}
+
+.delete {
+  color: #ff4c4f;
+  margin-right: 10px;
+}
+
+.todoCheck {
+  color: #ffd600;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-97 {
+  width: 97%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.f-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.edit-text {
+  margin-top: 18px;
+  padding: 5px;
+  width: 98%;
+}
+
+#Add-text {
+  margin-top: 5px;
+  padding: 10px 20px;
+  width: 84%;
+}
+
+#add-btn {
+  padding: 10px 15px;
+}
+
+.plus-icon {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.plus-icon:hover {
+  cursor: pointer;
+}
+
+.animate {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button {
+  position: relative;
+  border-radius: 10px;
+  color: #ffff;
+  text-decoration: none;
+}
+.action-button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  border-bottom: 1px solid;
+}
+
+.blue {
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+/*# sourceMappingURL=style.css.map */
